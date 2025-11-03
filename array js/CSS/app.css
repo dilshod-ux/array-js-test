@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f2f3f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cont {
+    width: 90%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="time"] {
+    flex: 1 1 calc(50% - 10px);
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.inputBox input[type="text"]:focus,
+.inputBox input[type="time"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.inputBox input[type="button"] {
+    flex: 1 1 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.inputBox input[type="button"]:hover {
+    background: #0056b3;
+}
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.block {
+    background: #f9fafb;
+    border: 1px solid #e0e0e0;
+    padding: 15px 20px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.block h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.block p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.block button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 8px;
+    transition:  0.3s ease;
+}
+
+.block button:hover {
+    background: #0056b3;
+}
+
+.block button:last-child {
+    background: #dc3545;
+}
+
+.block button:last-child:hover {
+    background: #a71d2a;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+
+    .inputBox input[type="text"],
+    .inputBox input[type="time"] {
+        flex: 1 1 100%;
+    }
+}
